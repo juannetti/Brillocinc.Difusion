@@ -31,27 +31,28 @@ namespace Brillocinc.Difusion
                       "~/Content/responsive.css",
                       "~/Content/style.css"));
 
-            //  template scripts
-            bundles.Add(new ScriptBundle("~/bundles/templateScripts").Include(
-                     "~/Scripts/bxslider.js",
-                     "~/Scripts/isotope.js",
-                     "~/Scripts/jquery.bootstrap-touchspin.js",
-                     "~/Scripts/jquery.easing.min.js",
-                     "~/Scripts/jquery.fancybox.pack.js",
-                     "~/Scripts/jquery.fancybox-media.js",
-                     "~/Scripts/jquery.js",
-                     "~/Scripts/map-script.js",
-                     "~/Scripts/mixitup.js",
-                     "~/Scripts/nouislider.js",
-                     "~/Scripts/owl.js",
-                     "~/Scripts/respond.js",
-                     "~/Scripts/revolution.min.js",
-                     "~/Scripts/script.js",
-                     "~/Scripts/validate.js",
-                     "~/Scripts/wow.js",
-                     "~/Scripts/jquery.nav.js",
-                     "~/Scripts/jquery.scrollTo.js",
-                     "~/Scripts/scrollbar.js"));
+            ////  template scripts
+            //bundles.Add(new ScriptBundle("~/bundles/templateScripts").Include(
+            //         "~/Scripts/bxslider.js",
+            //         "~/Scripts/isotope.js",
+            //         "~/Scripts/jquery.bootstrap-touchspin.js",
+            //         "~/Scripts/jquery.easing.min.js",
+            //         "~/Scripts/jquery.js",
+            //         "~/Scripts/revolution.min.js",
+            //         "~/Scripts/jquery.fancybox.pack.js",
+            //         "~/Scripts/jquery.fancybox-media.js",                    
+            //         "~/Scripts/owl.js",
+            //         "~/Scripts/wow.js",
+            //         "~/Scripts/script.js",
+            //         "~/Scripts/map-script.js",
+            //         "~/Scripts/mixitup.js",
+            //         "~/Scripts/nouislider.js",
+            //         "~/Scripts/respond.js",
+            //         "~/Scripts/validate.js",
+            //         "~/Scripts/jquery.nav.js",
+            //         "~/Scripts/jquery.scrollTo.js",
+            //         "~/Scripts/scrollbar.js"
+            //         ));
         }
     }
 }
