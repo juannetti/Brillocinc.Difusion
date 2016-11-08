@@ -3,13 +3,30 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>BRILLOCINC</title>
+
+    @*from template*@
+    @*<link href="~/Content/bootstrap.css" rel="stylesheet">*@
+    @*<link href="~/Content/revolution-slider.css" rel="stylesheet">*@
+    @*<link href="~/Content/style.css" rel="stylesheet">*@
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    @*<link href="~/Content/responsive.css" rel="stylesheet">*@
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,10 +52,241 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
+    </div>*@
+
+
+@*from template*@
+<div class="page-wrapper">
+
+<!-- Preloader -->
+<div class="preloader"><div class="loader"><div class="cssload-container"><div class="cssload-speeding-wheel"></div></div></div></div>
+
+<!-- Main Header-->
+<header class="main-header header-style-one">
+    <!--Header-Upper-->
+    <div class="header-upper">
+        <div class="auto-container">
+            <div class="clearfix">
+
+                <div class="pull-left logo-outer">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Brighton" title="Brighton"></a></div>
+                </div>
+
+                <div class="pull-right upper-right clearfix">
+
+                    <!--Info Box-->
+                    <div class="upper-column info-box">
+                        <div class="icon-box"><span class="flaticon-location-pin"></span></div>
+                        <ul>
+                            <li><strong>Mon - Sat : 9.00 - 17.30</strong></li>
+                            <li>Sunday : Closed</li>
+                        </ul>
+                    </div>
+
+                    <!--Info Box-->
+                    <div class="upper-column info-box">
+                        <div class="icon-box"><span class="flaticon-technology"></span></div>
+                        <ul>
+                            <li><strong>+1 - 000 - 8990 - 1560</strong></li>
+                            <li>support@domain.com</li>
+                        </ul>
+                    </div>
+
+                    <!--Info Box-->
+                    <div class="upper-column info-box">
+                        <!--<div class="link-btn">
+                            <a href="#" class="theme-btn btn-style-one">get a quote</a>
+                        </div>-->
+
+                        <div class="icon-box"><span class="flaticon-inbox"></span></div>
+                        <ul>
+                            <li><strong>Downloads</strong></li>
+                            <li>PDF Brochures</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <!--Header-Lower-->
+    <div class="header-lower">
+
+        <div class="auto-container">
+            <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown">
+                                <a href="#">Home</a>
+                                <ul>
+                                    <li><a href="index.html">Homepage Style One</a></li>
+                                    <li><a href="index-2.html">Homepage Style Two</a></li>
+                                    <li><a href="index-3.html">Homepage Style Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="#">Services</a>
+                                <ul>
+                                    <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="services-details.html">Agriculture Processing</a></li>
+                                    <li><a href="services-details.html">Chemical Research</a></li>
+                                    <li><a href="services-details.html">Mechanical Engineering</a></li>
+                                    <li><a href="services-details.html">Metal Engineering</a></li>
+                                    <li><a href="services-details.html">Petroleum & Gas</a></li>
+                                    <li><a href="services-details.html">Power & Energy</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Blog</a>
+                                <ul>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Portfolio</a>
+                                <ul>
+                                    <li><a href="portfolio-masonary.html">Portfolio Masonary</a></li>
+                                    <li><a href="portfolio-three-column.html">Portfolio three column</a></li>
+                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Shop</a>
+                                <ul>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="shop-single.html">Shop Single</a></li>
+                                    <li><a href="shopping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="checkout.html">Check Out</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+                <div class="btn-outer"><a href="contact.html" class="theme-btn quote-btn"><span class="fa fa-mail-reply-all"></span> Get a Quote</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Sticky Header-->
+    <div class="sticky-header">
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+                <a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="Brighton" title="Brighton"></a>
+            </div>
+
+            <!--Right Col-->
+            <div class="right-col pull-right">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown">
+                                <a href="#">Home</a>
+                                <ul>
+                                    <li><a href="index.html">Homepage Style One</a></li>
+                                    <li><a href="index-2.html">Homepage Style Two</a></li>
+                                    <li><a href="index-3.html">Homepage Style Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="#">Services</a>
+                                <ul>
+                                    <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="services-details.html">Agriculture Processing</a></li>
+                                    <li><a href="services-details.html">Chemical Research</a></li>
+                                    <li><a href="services-details.html">Mechanical Engineering</a></li>
+                                    <li><a href="services-details.html">Metal Engineering</a></li>
+                                    <li><a href="services-details.html">Petroleum & Gas</a></li>
+                                    <li><a href="services-details.html">Power & Energy</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Blog</a>
+                                <ul>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Portfolio</a>
+                                <ul>
+                                    <li><a href="portfolio-masonary.html">Portfolio Masonary</a></li>
+                                    <li><a href="portfolio-three-column.html">Portfolio three column</a></li>
+                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Shop</a>
+                                <ul>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="shop-single.html">Shop Single</a></li>
+                                    <li><a href="shopping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="checkout.html">Check Out</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav><!-- Main Menu End-->
+            </div>
+
+        </div>
+    </div><!--End Sticky Header-->
+
+</header>
+<!--End Main Header -->
+<!--Main Slider-->
+@RenderBody()
+</div>
+
+@*fin template*@
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/templateScripts")
+@RenderSection("scripts", required: false)
+    
+@*from template*@ 
+<script src="~/Scripts/IndustrialTemplate/jquery.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/IndustrialTemplate/revolution.min.js"></script>
+<script src="~/Scripts/IndustrialTemplate/jquery.fancybox.pack.js"></script>
+<script src="~/Scripts/IndustrialTemplate/jquery.fancybox-media.js"></script>
+<script src="~/Scripts/IndustrialTemplate/owl.js"></script>
+<script src="~/Scripts/IndustrialTemplate/wow.js"></script>
+<script src="~/Scripts/IndustrialTemplate/script.js"></script>
+
 </body>
 </html>

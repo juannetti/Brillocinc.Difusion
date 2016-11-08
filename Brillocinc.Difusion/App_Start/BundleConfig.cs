@@ -20,12 +20,38 @@ namespace Brillocinc.Difusion
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/bootstrap.js"));
+                    //"~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/scrollbar.css",
+                      "~/Content/revolution-slider.css",
+                      "~/Content/font-awesome.css",
+                      "~/Content/responsive.css",
+                      "~/Content/style.css"));
+
+            //  template scripts
+            bundles.Add(new ScriptBundle("~/bundles/templateScripts").Include(
+                     "~/Scripts/bxslider.js",
+                     "~/Scripts/isotope.js",
+                     "~/Scripts/jquery.bootstrap-touchspin.js",
+                     "~/Scripts/jquery.easing.min.js",
+                     "~/Scripts/jquery.fancybox.pack.js",
+                     "~/Scripts/jquery.fancybox-media.js",
+                     "~/Scripts/jquery.js",
+                     "~/Scripts/map-script.js",
+                     "~/Scripts/mixitup.js",
+                     "~/Scripts/nouislider.js",
+                     "~/Scripts/owl.js",
+                     "~/Scripts/respond.js",
+                     "~/Scripts/revolution.min.js",
+                     "~/Scripts/script.js",
+                     "~/Scripts/validate.js",
+                     "~/Scripts/wow.js",
+                     "~/Scripts/jquery.nav.js",
+                     "~/Scripts/jquery.scrollTo.js",
+                     "~/Scripts/scrollbar.js"));
         }
     }
 }
