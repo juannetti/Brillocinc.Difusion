@@ -27,7 +27,7 @@ namespace Brillocinc.Difusion
                       "~/Content/bootstrap.css",
                       "~/Content/scrollbar.css",
                       "~/Content/revolution-slider.css",
-                      "~/Content/font-awesome.css",
+                      //"~/Content/font-awesome.css",
                       "~/Content/responsive.css",
                       "~/Content/style.css"));
 

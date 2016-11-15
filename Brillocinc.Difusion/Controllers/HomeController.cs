@@ -13,17 +13,38 @@ namespace Brillocinc.Difusion.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult ProductosServicios()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult CincadoBombo()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult CincadoColgado()
+        {
+            return View();
+        }
+
+        public ActionResult Automatizacion()
+        {
+            return View();
+        }
+
+        public ActionResult AlmabrePlastificado()
+        {
+            return View();
+        }
+
+        public ActionResult AcercaDe()
+        {
+            return View();
+        }
+
+        public ActionResult Contacto()
+        {
             return View();
         }
     }

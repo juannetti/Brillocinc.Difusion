@@ -15,7 +15,9 @@
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    @*<link href="~/Content/responsive.css" rel="stylesheet">*@
+    @*<link href="~/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">*@
+    
+    <link href="~/Content/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
@@ -24,36 +26,10 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>*@
-
 
 @*from template*@
 <div class="page-wrapper">
@@ -69,45 +45,36 @@
             <div class="clearfix">
 
                 <div class="pull-left logo-outer">
-                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Brighton" title="Brighton"></a></div>
+                    <div class="logo"><a href="@Url.Action("Inicio", "Home")"><img src="~/images/_logo.png" alt="Brillocinc" title="Brillocinc"></a></div>
                 </div>
 
                 <div class="pull-right upper-right clearfix">
-
                     <!--Info Box-->
                     <div class="upper-column info-box">
-                        <div class="icon-box"><span class="flaticon-location-pin"></span></div>
+                        
+                        <div class="icon-box"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
                         <ul>
-                            <li><strong>Mon - Sat : 9.00 - 17.30</strong></li>
-                            <li>Sunday : Closed</li>
+                            <li><strong>Lun - Vie : 8:00 - 17:00</strong></li>
+                            <li>Fin de Semana : Cerrado</li>
                         </ul>
                     </div>
-
                     <!--Info Box-->
                     <div class="upper-column info-box">
-                        <div class="icon-box"><span class="flaticon-technology"></span></div>
+                        <div class="icon-box"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         <ul>
-                            <li><strong>+1 - 000 - 8990 - 1560</strong></li>
-                            <li>support@domain.com</li>
+                            <li><strong>(+562) 2525 3271</strong></li>
+                            <li>brillocinc@gmail.com</li>
                         </ul>
                     </div>
-
                     <!--Info Box-->
                     <div class="upper-column info-box">
-                        <!--<div class="link-btn">
-                            <a href="#" class="theme-btn btn-style-one">get a quote</a>
-                        </div>-->
-
-                        <div class="icon-box"><span class="flaticon-inbox"></span></div>
+                        <div class="icon-box"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li><strong>Downloads</strong></li>
-                            <li>PDF Brochures</li>
+                            <li><strong>Dirección</strong></li>
+                            <li>Santa Rosa 5587, San Miguel, Santiago</li>
                         </ul>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -130,60 +97,40 @@
 
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current dropdown">
-                                <a href="#">Home</a>
-                                <ul>
-                                    <li><a href="index.html">Homepage Style One</a></li>
-                                    <li><a href="index-2.html">Homepage Style Two</a></li>
-                                    <li><a href="index-3.html">Homepage Style Three</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about-us.html">About</a></li>
+                            <li>
+                                @Html.ActionLink("Inicio", "Index", "Home")                                
+                            </li>                           
                             <li class="dropdown">
-                                <a href="#">Services</a>
+                                @Html.ActionLink("Productos y Servicios", "ProductosServicios", "Home")
                                 <ul>
-                                    <li><a href="services.html">Our Services</a></li>
-                                    <li><a href="services-details.html">Agriculture Processing</a></li>
-                                    <li><a href="services-details.html">Chemical Research</a></li>
-                                    <li><a href="services-details.html">Mechanical Engineering</a></li>
-                                    <li><a href="services-details.html">Metal Engineering</a></li>
-                                    <li><a href="services-details.html">Petroleum & Gas</a></li>
-                                    <li><a href="services-details.html">Power & Energy</a></li>
+                                    <li>
+                                        @Html.ActionLink("Cincado en Bombo", "CincadoBombo", "Home")
+                                        @*<a href="services.html">Cincado en Bombo</a>*@
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Cincado en Colgado", "CincadoBombo", "Home")
+                                        @*<a href="services-details.html">Cincado en Colgado</a>*@
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Automatización", "CincadoBombo", "Home")
+                                        @*<a href="services-details.html">Automatización</a>*@
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Alambre Plastificado", "CincadoBombo", "Home")
+                                        @*<a href="services-details.html">Alambre Plastificado</a>*@
+                                    </li>
                                 </ul>
+                            </li>                     
+                            <li>
+                                @Html.ActionLink("Acerca De", "AcercaDe", "Home")
+                            <li>
+                                @Html.ActionLink("Contacto", "Contacto", "Home")
                             </li>
-                            <li class="dropdown">
-                                <a href="#">Blog</a>
-                                <ul>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">Portfolio</a>
-                                <ul>
-                                    <li><a href="portfolio-masonary.html">Portfolio Masonary</a></li>
-                                    <li><a href="portfolio-three-column.html">Portfolio three column</a></li>
-                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">Shop</a>
-                                <ul>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="shop-single.html">Shop Single</a></li>
-                                    <li><a href="shopping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
                 <!-- Main Menu End-->
-                <div class="btn-outer"><a href="contact.html" class="theme-btn quote-btn"><span class="fa fa-mail-reply-all"></span> Get a Quote</a></div>
             </div>
-
         </div>
     </div>
 
@@ -192,7 +139,7 @@
         <div class="auto-container clearfix">
             <!--Logo-->
             <div class="logo pull-left">
-                <a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="Brighton" title="Brighton"></a>
+                <a href="@Url.Action("Inicio", "Home")" class="img-responsive"><img src="~/images/_logo-small.png" alt="Brillocinc" title="Brillocinc"></a>
             </div>
 
             <!--Right Col-->
@@ -210,53 +157,35 @@
 
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current dropdown">
-                                <a href="#">Home</a>
-                                <ul>
-                                    <li><a href="index.html">Homepage Style One</a></li>
-                                    <li><a href="index-2.html">Homepage Style Two</a></li>
-                                    <li><a href="index-3.html">Homepage Style Three</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about-us.html">About</a></li>
-                            <li class="dropdown">
-                                <a href="#">Services</a>
-                                <ul>
-                                    <li><a href="services.html">Our Services</a></li>
-                                    <li><a href="services-details.html">Agriculture Processing</a></li>
-                                    <li><a href="services-details.html">Chemical Research</a></li>
-                                    <li><a href="services-details.html">Mechanical Engineering</a></li>
-                                    <li><a href="services-details.html">Metal Engineering</a></li>
-                                    <li><a href="services-details.html">Petroleum & Gas</a></li>
-                                    <li><a href="services-details.html">Power & Energy</a></li>
-                                </ul>
+                            <li>
+                                @Html.ActionLink("Inicio", "Index", "Home")
                             </li>
                             <li class="dropdown">
-                                <a href="#">Blog</a>
+                                @Html.ActionLink("Productos y Servicio", "ProductosServicios", "Home")
                                 <ul>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                    <li>
+                                        @Html.ActionLink("Cincado en Bombo", "CincadoBombo", "Home")
+                                        @*<a href="services.html">Cincado en Bombo</a>*@
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Cincado en Colgado", "CincadoBombo", "Home")
+                                        @*<a href="services-details.html">Cincado en Colgado</a>*@
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Automatización", "CincadoBombo", "Home")
+                                        @*<a href="services-details.html">Automatización</a>*@
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Alambre Plastificado", "CincadoBombo", "Home")
+                                        @*<a href="services-details.html">Alambre Plastificado</a>*@
+                                    </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a href="#">Portfolio</a>
-                                <ul>
-                                    <li><a href="portfolio-masonary.html">Portfolio Masonary</a></li>
-                                    <li><a href="portfolio-three-column.html">Portfolio three column</a></li>
-                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                </ul>
+                            <li>
+                                @Html.ActionLink("Acerca De", "AcercaDe", "Home")
+                            <li>
+                                @Html.ActionLink("Contacto", "Contacto", "Home")
                             </li>
-                            <li class="dropdown">
-                                <a href="#">Shop</a>
-                                <ul>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="shop-single.html">Shop Single</a></li>
-                                    <li><a href="shopping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav><!-- Main Menu End-->
@@ -287,6 +216,9 @@
 <script src="~/Scripts/IndustrialTemplate/owl.js"></script>
 <script src="~/Scripts/IndustrialTemplate/wow.js"></script>
 <script src="~/Scripts/IndustrialTemplate/script.js"></script>
+<script src="~/Scripts/IndustrialTemplate/validate.js"></script>
+
+
 
 </body>
 </html>
