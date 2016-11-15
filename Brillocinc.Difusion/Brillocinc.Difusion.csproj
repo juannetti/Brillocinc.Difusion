@@ -352,7 +352,9 @@
     <Content Include="images\icons\icon-dropdown.png" />
     <Content Include="images\icons\icon-select.png" />
     <Content Include="images\icons\icon-toggle.png" />
-    <Content Include="images\icons\map-marker.png" />
+    <Content Include="images\icons\map-marker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="images\icons\menu-separater-2.png" />
     <Content Include="images\icons\menu-separater.png" />
     <Content Include="images\icons\preloader.GIF" />
