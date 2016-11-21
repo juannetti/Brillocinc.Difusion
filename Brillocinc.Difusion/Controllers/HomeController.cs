@@ -23,17 +23,17 @@ namespace Brillocinc.Difusion.Controllers
             return View();
         }
 
-        public ActionResult CincadoColgado()
+        public ActionResult ParrilaPlastificadas()
         {
             return View();
         }
 
-        public ActionResult Automatizacion()
+        public ActionResult PilaresCadenas()
         {
             return View();
         }
 
-        public ActionResult AlmabrePlastificado()
+        public ActionResult BandejasPortaconductores()
         {
             return View();
         }

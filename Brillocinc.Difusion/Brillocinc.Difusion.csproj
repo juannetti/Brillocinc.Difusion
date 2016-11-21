@@ -363,9 +363,13 @@
     <Content Include="images\icons\submenu-icon.png" />
     <Content Include="images\icons\testimonial-curve.png" />
     <Content Include="images\logo-2.png" />
+    <Content Include="images\logo-solo.png" />
     <Content Include="images\main-slider\_1.jpg" />
     <Content Include="images\main-slider\_2.jpg" />
     <Content Include="images\main-slider\_3.jpg" />
+    <Content Include="images\main-slider\_4.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="images\resource\advisor-image-1.png" />
     <Content Include="images\resource\advisor-image-2.jpg" />
     <Content Include="images\resource\author-thumb-1.jpg" />
@@ -481,6 +485,12 @@
     <Content Include="images\resource\quote-widget.jpg" />
     <Content Include="images\resource\result-1.jpg" />
     <Content Include="images\resource\result-2.jpg" />
+    <Content Include="images\resource\SAM_0331.JPG" />
+    <Content Include="images\resource\SAM_0339.JPG" />
+    <Content Include="images\resource\SAM_0377.JPG" />
+    <Content Include="images\resource\SAM_0378.JPG" />
+    <Content Include="images\resource\SAM_0388.JPG" />
+    <Content Include="images\resource\SAM_0398.JPG" />
     <Content Include="images\resource\service-detail-1.jpg" />
     <Content Include="images\resource\service-image-1.jpg" />
     <Content Include="images\resource\service-image-10.jpg" />
@@ -529,6 +539,9 @@
     <Content Include="images\resource\testi-image-6.jpg" />
     <Content Include="images\resource\testi-image-7.jpg" />
     <Content Include="images\resource\video-image-1.jpg" />
+    <Content Include="images\SAM_0330.JPG" />
+    <Content Include="images\SAM_0368.JPG" />
+    <Content Include="images\SAM_0390.JPG" />
     <Content Include="images\_logo-small.png" />
     <Content Include="images\_logo.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -614,6 +627,9 @@
     <Content Include="Views\Home\CincadoColgado.cshtml" />
     <Content Include="Views\Home\Automatizacion.cshtml" />
     <Content Include="Views\Home\AlmabrePlastificado.cshtml" />
+    <Content Include="Views\Home\ParrilaPlastificadas.cshtml" />
+    <Content Include="Views\Home\PilaresCadenas.cshtml" />
+    <Content Include="Views\Home\BandejasPortaconductores.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

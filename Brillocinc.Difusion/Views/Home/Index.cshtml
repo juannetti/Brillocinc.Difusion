@@ -21,7 +21,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><div class="border-title">Metalúrgica Brillocinc LTDA</div></div>
+                         data-endeasing="Power4.easeIn"><div class="border-title">METALURGICA BRILLOCINC LTDA</div></div>
 
                     <div class="tp-caption sfl sfb tp-resizeme"
                          data-x="left" data-hoffset="15"
@@ -34,7 +34,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><h2>Más de 40 años entregando excelencia en <br>servicio de cincado electroestático</h2></div>
+                         data-endeasing="Power4.easeIn"><h2>Más de 40 años entregando excelencia en <br>servicio de cincado electrolítico</h2></div>
 
                     <div class="tp-caption sfr sfb tp-resizeme"
                          data-x="left" data-hoffset="15"
@@ -47,7 +47,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-one">VIEW SOLUTIONS</a>&ensp;&ensp; @Html.ActionLink("CONTACTO", "Contacto", "Homa", new { @class = "theme-btn btn-style-two" })</div>
+                         data-endeasing="Power4.easeIn">@Html.ActionLink("CONTACTO", "Contacto", "Homa", new { @class = "theme-btn btn-style-one" })</div>
 
 
                 </li>
@@ -82,7 +82,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><h2>Disponemos de dos línes automáticas:<br>bombos para piezas pequeñas y colgado</h2></div>
+                         data-endeasing="Power4.easeIn"><h2>Disponemos de dos línes automáticas:<br>bombos para piezas pequeñas y estático</h2></div>
 
                     <div class="tp-caption sfr sfb tp-resizeme"
                          data-x="right" data-hoffset="-15"
@@ -95,12 +95,12 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-one">contact us</a></div>
+                         data-endeasing="Power4.easeIn">@Html.ActionLink("CONTACTO", "Contacto", "Homa", new { @class = "theme-btn btn-style-one" })</div>
 
                 </li>
 
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/_3.jpg" data-saveperformance="off" data-title="Awesome Title Here">
-                    <img src="images/main-slider/_3.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/_4.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                    <img src="images/main-slider/_4.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <!--Overlay Style Three-->
                     <div class="overlay-style-three"></div>
@@ -116,7 +116,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><div class="subtitle-text">Calidad</div></div>
+                         data-endeasing="Power4.easeIn"><div class="subtitle-text">Alambre Electrosoldado</div></div>
 
                     <div class="tp-caption text-center sft sfb tp-resizeme"
                          data-x="center" data-hoffset="0"
@@ -129,7 +129,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><h2>Ofrecemos productos y servicios para la industria<br>alimentaria con estándares de calidad internacional</h2></div>
+                         data-endeasing="Power4.easeIn"><h2>Expertos en la fabricación de productos de alambre<br>para refrigeración y construcción</h2></div>
 
                     <div class="tp-caption sfr sfb tp-resizeme"
                          data-x="center" data-hoffset="0"
@@ -142,7 +142,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-one">contact us</a></div>
+                         data-endeasing="Power4.easeIn">@Html.ActionLink("CONTACTO", "Contacto", "Homa", new { @class = "theme-btn btn-style-one" })</div>
                 </li>
             </ul>
             <div class="tp-bannertimer"></div>
@@ -161,7 +161,7 @@
                 <div class="box-column wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <h2>Ofrecemos</h2>
                     <div class="text">Un servicio de calidad comprobada y el respaldo de años de experiencia en procesos de cincado industrial.</div>
-                    <a class="more" href="services-details.html">VIEW MORE <span class="fa fa-long-arrow-right"></span></a>
+                    <a class="more" href="@Url.Action("CincadoBombo", "Home")">VER MAS <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -177,7 +177,7 @@
                                 <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>
                             </div>
                             <h3>Calidad</h3>
-                            <div class="text">Brindamos servicios de cincado electrolítico ácido (HCl) logrando espesores de hasta 15 micras.</div>
+                            <div class="text">Brindamos servicios de cincado electrolítico bajo la norma ASTMB 633 para distintos espesores.</div>
 
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                                 <i class="fa fa-hand-paper-o fa-lg" aria-hidden="true"></i>
                             </div>
                             <h3>Seguridad</h3>
-                            <div class="text">Nuestros procesos de acabo son en base a cromatizados trivalentes lo que les permite a nuestros clientes exportar sus productos a países con altos estándares de calidad.</div>
+                            <div class="text">Nuestros procesos de acabado son en base a cromatizados trivalentes lo que les permite a nuestros clientes exportar sus productos a países con altos estándares de calidad.</div>
 
                         </div>
                     </div>
