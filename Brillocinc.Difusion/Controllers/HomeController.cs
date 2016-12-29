@@ -13,10 +13,10 @@ namespace Brillocinc.Difusion.Controllers
             return View();
         }
 
-        public ActionResult ProductosServicios()
-        {
-            return View();
-        }
+        //public ActionResult ProductosServicios()
+        //{
+        //    return View();
+        //}
 
         public ActionResult CincadoBombo()
         {
@@ -34,6 +34,11 @@ namespace Brillocinc.Difusion.Controllers
         }
 
         public ActionResult BandejasPortaconductores()
+        {
+            return View();
+        }
+
+        public ActionResult MueblesRetail()
         {
             return View();
         }

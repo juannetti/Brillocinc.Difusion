@@ -1,60 +1,34 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <title>METALÚRGICA BRILLOCINC LTDA</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Soluciones de zincado electrolítico automáticas, fabricación de productos de alambre para refrigeración y construcción">
-    <meta name="keywords" content="cinc,zinc,cincado,zincado,alambre">
-    <title>BRILLOCINC</title>
-
-    @*from template*@
-    @*<link href="~/Content/bootstrap.css" rel="stylesheet">*@
-    @*<link href="~/Content/revolution-slider.css" rel="stylesheet">*@
-    @*<link href="~/Content/style.css" rel="stylesheet">*@
-    <!--Favicon-->
+    <meta name="description" content="Soluciones de zincado electrolítico automáticas, fabricación de productos de alambre para refrigeración y construcción"/>
+    <meta name="keywords" content="cinc,zinc,cincado,zincado,alambre,metalÚrgica,brillocinc">    
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    
-    @*<link href="~/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">*@
-    
-    <link href="~/Content/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-
-
-
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
-    <link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">    
 </head>
 <body>
 
 @*from template*@
 <div class="page-wrapper">
-
 <!-- Preloader -->
 <div class="preloader"><div class="loader"><div class="cssload-container"><div class="cssload-speeding-wheel"></div></div></div></div>
-
 <!-- Main Header-->
 <header class="main-header header-style-one">
     <!--Header-Upper-->
     <div class="header-upper">
         <div class="auto-container">
             <div class="clearfix">
-
                 <div class="pull-left logo-outer">
-                    <div class="logo"><a href="@Url.Action("Index", "Home")"><img src="~/images/_logo.png" alt="Brillocinc" title="Brillocinc"></a></div>
+                    <div class="logo"><a href="@Url.Action("Index", "Home")"><img src="~/images/_logo_mejor.png" alt="Brillocinc" title="Brillocinc"></a></div>
                 </div>
-
                 <div class="pull-right upper-right clearfix">
                     <!--Info Box-->
-                    <div class="upper-column info-box">
-                        
+                    <div class="upper-column info-box">                        
                         <div class="icon-box"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
                         <ul>
                             <li><strong>Lun - Vie : 8:00 - 17:00</strong></li>
@@ -66,7 +40,7 @@
                         <div class="icon-box"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         <ul>
                             <li><strong>(+562) 2525 3271</strong></li>
-                            <li>brillocinc@gmail.com</li>
+                            <li>brillocinc<i class="fa fa-at" aria-hidden="true"></i>gmail.com</li>
                         </ul>
                     </div>
                     <!--Info Box-->
@@ -82,10 +56,8 @@
             </div>
         </div>
     </div>
-
     <!--Header-Lower-->
     <div class="header-lower">
-
         <div class="auto-container">
             <div class="nav-outer clearfix">
                 <!-- Main Menu -->
@@ -98,12 +70,11 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li>
-                                @Html.ActionLink("Inicio", "Index", "Home")                                
-                            </li>                           
+                            <li>                           
+                                @Html.ActionLink("Inicio", "Index", "Home")                         
+                            </li>                  
                             <li class="dropdown">
                                 @Html.ActionLink("Productos y Servicios", "ProductosServicios", "Home")
                                 <ul>
@@ -116,8 +87,11 @@
                                     <li>
                                         @Html.ActionLink("Fabricación de Pilares y Cadenas", "PilaresCadenas", "Home")
                                     </li>
-                                    <li>
+                                    @*<li>
                                         @Html.ActionLink("Bandejas Portaconductores", "BandejasPortaconductores", "Home")
+                                    </li>*@
+                                    <li>
+                                        @Html.ActionLink("Muebles Metálicos para Retail", "MueblesRetail", "Home")
                                     </li>
                                 </ul>
                             </li>                     
@@ -131,7 +105,6 @@
             </div>
         </div>
     </div>
-
     <!--Sticky Header-->
     <div class="sticky-header">
         <div class="auto-container clearfix">
@@ -139,7 +112,6 @@
             <div class="logo pull-left">
                 <a href="@Url.Action("Index", "Home")" class="img-responsive"><img src="~/images/_logo-small.png" alt="Brillocinc" title="Brillocinc"></a>
             </div>
-
             <!--Right Col-->
             <div class="right-col pull-right">
                 <!-- Main Menu -->
@@ -170,8 +142,11 @@
                                     <li>
                                         @Html.ActionLink("Fabricación de Pilares y Cadenas", "PilaresCadenas", "Home")
                                     </li>
-                                    <li>
+                                    @*<li>
                                         @Html.ActionLink("Bandejas Portaconductores", "BandejasPortaconductores", "Home")
+                                    </li>*@
+                                    <li>
+                                        @Html.ActionLink("Muebles Metálicos para Retail", "MueblesRetail", "Home")
                                     </li>
                                 </ul>
                             </li>
@@ -182,35 +157,38 @@
                     </div>
                 </nav><!-- Main Menu End-->
             </div>
-
         </div>
     </div><!--End Sticky Header-->
-
 </header>
 <!--End Main Header -->
 <!--Main Slider-->
 @RenderBody()
 </div>
-
 @*fin template*@
-
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
 @*@Scripts.Render("~/bundles/templateScripts")*@
-@RenderSection("scripts", required: false)
-    
-
+@RenderSection("scripts", required: false)    
+<link href="~/Content/responsive.min.css" rel="stylesheet">
+<link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css">
 <script src="~/Scripts/IndustrialTemplate/jquery.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
 <script src="~/Scripts/IndustrialTemplate/revolution.min.js"></script>
 <script src="~/Scripts/IndustrialTemplate/jquery.fancybox.pack.js"></script>
-<script src="~/Scripts/IndustrialTemplate/jquery.fancybox-media.js"></script>
-<script src="~/Scripts/IndustrialTemplate/owl.js"></script>
+<script src="~/Scripts/IndustrialTemplate/jquery.fancybox-media.min.js"></script>
+<script src="~/Scripts/IndustrialTemplate/owl.min.js"></script>
 <script src="~/Scripts/IndustrialTemplate/wow.js"></script>
-<script src="~/Scripts/IndustrialTemplate/script.js"></script>
+<script src="~/Scripts/IndustrialTemplate/script.min.js"></script>
 <script src="~/Scripts/IndustrialTemplate/validate.js"></script>
-
-
-
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-89274194-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
