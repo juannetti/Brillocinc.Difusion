@@ -401,6 +401,12 @@
     <Content Include="images\resource\blog-image-7.jpg" />
     <Content Include="images\resource\blog-image-8.jpg" />
     <Content Include="images\resource\blog-image-9.jpg" />
+    <Content Include="images\resource\buena.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\resource\buena2.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="images\resource\cards.jpg" />
     <Content Include="images\resource\cart-thumb-1.jpg" />
     <Content Include="images\resource\cart-thumb-2.jpg" />
